@@ -1,0 +1,10 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" [routerLink]="menuList[3].link">Home</a>
+      </div>
+      <ul *ngFor="let menu of menuList" class="nav navbar-nav navbar-right">      
+        <li routerLinkActive="active"><a [routerLink]="menu.link">{{menu.name | titlecase}}</a></li>      
+      </ul>
+    </div>
+  </nav>
